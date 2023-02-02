@@ -1,0 +1,4 @@
+aiogram==2.24
+emoji==2.2.0
+pony==0.7.16
+python-dotenv==0.21.0
