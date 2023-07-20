@@ -8,9 +8,10 @@ class InlineConstructor:
     @staticmethod
     def create_kb(
         text_and_data: list,
-        schema: list
+        schema: list = None
     ) -> InlineKeyboardMarkup:
         kb = InlineKeyboardMarkup()
+        schema = [1 for i in range(len(text_and_data))] if not schema else schema
         kb.row_width = max(schema)
         btns = []
 

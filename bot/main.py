@@ -2,7 +2,6 @@ from aiogram.utils import executor
 import logging
 
 from loader import dp
-from utils.set_bot_commands import set_default_commands
 
 import os
 import sys

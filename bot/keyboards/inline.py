@@ -9,7 +9,6 @@ def inline_kb_start(telegram_user):
         [emojize(':ru: ru', language='alias'), 'btn_ru'],
         [emojize(':england: eng', language='alias'), 'btn_eng'],
     ]
-    schema = [2]
-    inline_kb = InlineConstructor.create_kb(text_and_data, schema)
+    inline_kb = InlineConstructor.create_kb(text_and_data)
     return text, inline_kb
 
